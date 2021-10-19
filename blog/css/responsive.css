@@ -1,0 +1,1429 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**
+	Gemiz HTML Template
+ 	Copyright (c) 2014, Pophonic 
+
+	Author: Pophonic
+	Profile: themeforest.net/user/pophonic
+	
+**/
+
+
+
+/*******************************************************************************
+						Design for a width of 1024px
+*******************************************************************************/
+
+@media only screen and (max-width:1024px)
+{
+	
+	/* ===== Body, Images and Typography ===== */
+	
+	.top-header {
+		display: none;
+	}
+	
+	.wrapper {
+		width: 100%;
+	}
+	
+	.container {
+		float: none;
+		padding-top: 70px;
+		margin: auto;
+		margin-bottom: 367px;
+	}
+	
+	
+	/* ===== Footer ===== */
+	
+	.footer-content {
+		float: none;
+		margin: auto;
+	}
+}
+
+
+/*******************************************************************************
+					Design for a width of 768px to 984px
+*******************************************************************************/
+
+@media only screen and (max-width:984px)
+{
+	
+	/* ===== Body, Images and Typography ===== */
+	
+	.container {
+		width: 728px;
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+	}
+	
+	.stripe.synced-slider {
+		margin-top: 20px;
+	}
+	
+	
+	/* ===== All Content ===== */
+	
+	.toppanel-left {
+		width: 100%;
+		float: none;
+		margin-right: 0px;
+	}
+	
+	.toppanel-right {
+		width: 100%;
+		float: none;
+		margin-top: 20px;
+	}
+	
+	.site-slogan {
+		text-align: center;
+	}
+	
+	.home-aboutus {
+		width: 250px;
+		float: left;
+	}
+	
+	.home-aboutus-content {
+		width: 458px;
+		height: 250px;
+		float: right;
+		margin-top: 0px;
+	}
+	
+	.homepanel-title-area {
+		width: 65%;
+	}
+	
+	
+	/* ===== Call To Action ===== */
+	
+	.call-action {
+		height: auto;
+		display: block;
+		text-align: center;
+	}
+	
+	.call-action-text {
+		display: block;
+		margin-top: -5px;
+		margin-right: 0px;
+	}
+	
+	.call-action button {
+		margin-top: 30px;
+		float: none;
+	}
+	
+	
+	/* ===== Homepage Synced Slider ===== */
+	
+	#sync1 .item figure img {
+		width: 100%;
+		height: auto;
+	}
+	
+	#sync2 {
+		width: 746px;
+		margin: 11px 0px -9px -9px;
+	}
+	
+	#sync2.width2 {
+		width: 746px;
+		margin-bottom: -1px;
+	}
+	
+	#sync2 .item {
+		margin: 9px;
+	}
+	
+	
+	/* ===== Home Content Panel ===== */
+	
+	.testimonial-panel blockquote {
+		width: 80%;
+	}
+	
+	.team-panel {
+		padding: 40px 84px 5px 84px;
+	}
+	
+	.client-panel {
+		padding: 40px 40px 5px 40px;
+	}
+	
+	#owl-client .item {
+		margin: 0px 20px;
+	}
+	
+	
+	/* ===== About Us Page ===== */
+	
+	.aboutus-zone-left {
+		width: 418px;
+		padding-right: 30px;
+	}
+	
+	.aboutus-zone-right {
+		width: 230px;
+	}
+	
+	.aboutus-team {
+		margin-left: -16px;
+		margin-top: -16px;
+	}
+	
+	.aboutus-team li {
+		width: 107px;
+		margin-left: 16px;
+		margin-top: 16px;
+	}
+	
+	.aboutus-team li img {
+		width: 100%;
+		height: auto;
+	}
+	
+	.aboutus-team-wrapper {
+		padding: 0px 44px 0px 44px;
+	}
+	
+	
+	/* ===== Our Services Page ===== */
+	
+	.service-icon li {
+		width: 33.32%;
+	}
+	
+	.service-icon li:nth-child(4) {
+		padding: 40px 0px;
+	}
+	
+	.service-icon li:nth-child(4) .service-bordertop,
+	.service-icon li:nth-child(6) .service-borderbottom,
+	.service-icon li:last-child .service-borderright {
+		display: block;
+	}
+	
+	.service-icon li:nth-child(3) .service-borderright,
+	.service-icon li:nth-child(6) .service-borderright {
+		display: none;
+	}
+	
+	.service-icon li:nth-child(4) .service-borderright {
+		display: block;
+		height: 74%;
+		margin-top: 40px;
+	}
+	
+	.service-list li {
+		height: auto;
+	}
+	
+	.service-list li img {
+		width: 100%;
+		height: auto;
+	}
+	
+	.service-list li .thumbnail-hover {
+		-webkit-border-top-right-radius: 10px;
+		-webkit-border-bottom-left-radius: 0px;
+		-moz-border-radius-topright: 10px;
+		-moz-border-radius-bottomleft: 0px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 0px;
+	}
+	
+	.service-list li:nth-child(even) .thumbnail-hover {
+		-webkit-border-top-left-radius: 10px;
+		-webkit-border-bottom-right-radius: 0px;
+		-moz-border-radius-topleft: 10px;
+		-moz-border-radius-bottomright: 0px;
+		border-top-left-radius: 10px;
+		border-bottom-right-radius: 0px;
+	}
+	
+	.service-list li figure {
+		width: 100%;
+		float: none;
+		-webkit-border-top-right-radius: 10px;
+		-webkit-border-bottom-left-radius: 0px;
+		-moz-border-radius-topright: 10px;
+		-moz-border-radius-bottomleft: 0px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 0px;
+	}
+	
+	.service-list li .service-detail {
+		width: 100%;
+		height: auto;
+		float: none;
+		-webkit-border-top-right-radius: 0px;
+		-webkit-border-bottom-left-radius: 10px;
+		-moz-border-radius-topright: 0px;
+		-moz-border-radius-bottomleft: 10px;
+		border-top-right-radius: 0px;
+		border-bottom-left-radius: 10px;
+	}
+	
+	.service-list li:nth-child(even) figure {
+		float: none;
+		
+		-webkit-border-top-left-radius: 10px;
+		-webkit-border-bottom-right-radius: 0px;
+		-moz-border-radius-topleft: 10px;
+		-moz-border-radius-bottomright: 0px;
+		border-top-left-radius: 10px;
+		border-bottom-right-radius: 0px;
+	}
+	
+	.service-list li:nth-child(even) .service-detail {
+		float: none;
+		
+		-webkit-border-top-left-radius: 0px;
+		-webkit-border-bottom-right-radius: 10px;
+		-moz-border-radius-topleft: 0px;
+		-moz-border-radius-bottomright: 10px;
+		border-top-left-radius: 0px;
+		border-bottom-right-radius: 10px;
+	}
+	
+	.service-detail p {
+		margin-bottom: 60px;
+	}
+	
+	.service-detail button {
+		left: inherit;
+		right: 0;
+		margin: 0px 30px 30px 0px;
+	}
+	
+	
+	/* ===== Blog Page ===== */
+	
+	.blog-list {
+		margin-left: 0px;
+	}
+	
+	.blog-list li {
+		width: 100%;
+		float: none;
+		margin-left: 0px;
+	}
+	
+	.blog-list li figure img {
+		width: 100%;
+		height: auto;
+	}
+	
+	.blog-vertical {
+		width: 458px;
+	}
+	
+	.blog-list-bottom button {
+		width: 120px;
+		padding: 0px;
+	}
+	
+	.related-post {
+		margin-left: -18px;
+	}
+	
+	.related-post li {
+		width: 81px;
+		margin-left: 18px;
+	}
+	
+	.related-post-thumb img {
+		width: 100%;
+		height: auto;
+	}
+	
+	
+	/* ===== Our Clients Page ===== */
+	
+	.client-list li {
+		width: 25%;
+	}
+	
+	.bordertop,
+	.borderbottom {
+		width: 77%;
+	}
+	
+	.borderright {
+		height: 73%;
+	}
+	
+	.client-list li:nth-child(5) .bordertop {
+		border-top: #dddddd dashed 1px;
+	}
+	
+	.client-list li:nth-child(5) .borderright,
+	.client-list li:nth-child(10) .borderright,
+	.client-list li:nth-child(15) .borderright {
+		border-right: #dddddd dashed 1px;
+	}
+	
+	.client-list li:nth-child(4) .borderright,
+	.client-list li:nth-child(8) .borderright,
+	.client-list li:nth-child(12) .borderright,
+	.client-list li:nth-child(16) .borderright {
+		border-right: none;
+	}
+	
+	
+	/* ===== Contect Us Page ===== */
+	
+	.contact-area {
+		display: block;
+		overflow: hidden;
+	}
+	
+	.send-message {
+		width: 100%;
+		display: block;
+		padding-right: 0px;
+	}
+	
+	.contact-info {
+		width: 100%;
+		display: block;
+		padding-left: 0px;
+		margin-top: 30px;
+	}
+	
+	
+	/* ===== Sidebar ===== */
+	
+	.sidebar-section {
+		width: 270px;
+	}
+	
+	.sidebar-gallery li {
+		width: 25%;
+	}
+	
+	.sidebar-gallery li img {
+		width: 100%;
+		height: auto;
+	}
+	
+	
+	/* ===== Footer ===== */
+	
+	.footer-section {
+		position: relative;
+		margin-top: 20px;
+	}
+	
+	.footer-content {
+		width: 728px;
+	}
+	
+	.footer-title {
+		margin-top: 0px;
+	}
+	
+	.footer-about {
+		width: 100%;
+		float: none;
+		margin-right: 0px;
+	}
+	
+	.footer-contact {
+		width: 309px;
+		margin-right: 30px;
+		margin-top: 30px;
+	}
+	
+	.footer-subscribe {
+		width: 309px;
+		margin-top: 30px;
+	}
+	
+	
+	/* ===== Subscribe Field Box ===== */
+	
+	.subscribe-box input {
+		width: 148px;
+	}
+	
+	.subscribe-box .first-name {
+		margin-right: 13px;
+	}
+}
+
+
+/*******************************************************************************
+					Design for a width of 720px to 767px
+*******************************************************************************/
+
+@media only screen and (max-width:767px)
+{
+	
+	/* ===== Body, Images and Typography ===== */
+	
+	.container {
+		width: 680px;
+	}
+	
+	
+	/* ===== All Content ===== */
+	.home-aboutus-content {
+		width: 410px;
+	}
+	
+	
+	/* ===== Homepage Synced Slider ===== */
+	
+	#sync1 .item figure img {
+		width: 100%;
+		height: auto;
+	}
+	
+	#sync2 {
+		width: 696px;
+		margin: 12px 0px -8px -8px;
+	}
+	
+	#sync2.width2 {
+		width: 696px;
+		margin-bottom: 0px;
+	}
+	
+	#sync2 .item {
+		margin: 8px;
+	}
+	
+	
+	/* ===== Home Content Panel ===== */
+	
+	.team-panel {
+		padding: 40px 60px 5px 60px;
+	}
+	
+	
+	/* ===== About Us Page ===== */
+	
+	.aboutus-team li {
+		width: 100px;
+	}
+	
+	.aboutus-team-wrapper {
+		padding: 0px 20px 0px 20px;
+	}
+	
+	
+	/* ===== Blog Page ===== */
+	
+	.blog-vertical {
+		width: 410px;
+	}
+	
+	.related-post {
+		margin-top: 0px;
+		margin-left: -20px;
+	}
+	
+	.related-post li {
+		width: 155px;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+	
+	
+	/* ===== Our Clients Page ===== */
+	
+	.bordertop,
+	.borderbottom {
+		width: 75%;
+	}
+	
+	.borderright {
+		height: 71%;
+	}
+	
+	
+	/* ===== Footer ===== */
+	
+	.footer-content {
+		width: 680px;
+	}
+	
+	.footer-contact,
+	.footer-subscribe {
+		width: 285px;
+	}
+	
+	
+	/* ===== Subscribe Field Box ===== */
+	
+	.subscribe-box input {
+		width: 136px;
+	}
+}
+
+
+/*******************************************************************************
+					Design for a width of 540px to 719px
+*******************************************************************************/
+
+@media only screen and (max-width:719px)
+{
+	
+	/* ===== Body, Images and Typography ===== */
+	
+	.container {
+		width: 500px;
+	}
+	
+	
+	/* ===== All Content ===== */
+	
+	.homepanel-title-area {
+		width: 80%;
+	}
+	
+	.home-aboutus {
+		width: 100%;
+		float: none;
+	}
+	
+	.home-aboutus img {
+		width: 100%;
+		height: auto;
+	}
+	
+	.home-aboutus-content {
+		width: 100%;
+		height: auto;
+		float: none;
+		margin-top: 20px;
+	}
+	
+	.home-aboutus-content.synced-slider {
+		height: auto;
+	}
+	
+	.home-aboutus-title {
+		padding: 10px 40px;
+	}
+	
+	.home-aboutus-details {
+		padding: 25px 40px 85px 40px;
+	}
+	
+	.page-title {
+		height: auto;
+	}
+	
+	.page-title.single-page {
+		padding: 25px 40px 40px 40px;
+	}
+	
+	.page-title-detail {
+		width: 100%;
+		float: none;
+		padding-right: 0px;
+	}
+	
+	.page-title-detail.portfolio-title {
+		width: 100%;
+	}
+	
+	.sub-title {
+		font-size: 14px;
+	}
+	
+	.page-navigation {
+		width: 100%;
+		float: none;
+		margin-top: 18px;
+	}
+	
+	.page-navigation ul {
+		float: none;
+	}
+	
+	
+	/* ===== Homepage Synced Slider ===== */
+	
+	.caption h1 {
+		font-size: 14px;
+	}
+	
+	#sync2,
+	#sync2.width2 {
+		width: 517px;
+	}
+	
+	
+	/* ===== Home Content Panel ===== */
+	
+	#owl-team .item {
+		margin: 0px 80px;
+	}
+	
+	#owl-client .item {
+		margin: 0px 15px;
+	}
+	
+	
+	/* ===== About Us Page ===== */
+	
+	.aboutus-zone-wrapper {
+		display: block;
+	}
+	
+	.aboutus-zone-left {
+		display: block;
+		width: 100%;
+		padding-right: 0px;
+	}
+	
+	.aboutus-zone-right {
+		display: block;
+		width: 100%;
+	}
+	
+	.aboutus-team {
+		margin-left: -20px;
+		margin-top: 20px;
+	}
+	
+	.aboutus-team li {
+		width: 200px;
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+	
+	
+	/* ===== Our Services Page ===== */
+	
+	.service-icon li {
+		width: 50%;
+	}
+	
+	.service-icon li:nth-child(3) {
+		padding: 40px 0px;
+	}
+	
+	.service-icon li:nth-child(3) .service-bordertop {
+		display: block;
+	}
+	
+	.service-icon li:nth-child(3) .service-borderright {
+		display: block;
+		height: 74%;
+		margin-top: 40px;
+	}
+	
+	.service-icon li:nth-child(2) .service-borderright,
+	.service-icon li:nth-child(4) .service-borderright,
+	.service-icon li:nth-child(6) .service-borderright,
+	.service-icon li:last-child .service-borderright {
+		display: none;
+	}
+	
+	
+	/* ===== Portfolio Page ===== */
+	
+	.portfolio-status {
+		width: 100%;
+		float: none;
+		margin-top: 12px;
+	}
+	
+	.portfolio-status ul {
+		list-style: none;
+		margin-left: -6px;
+	}
+	
+	.portfolio-status ul li {
+		width: 37px;
+		height: 37px;
+		float: left;
+		margin-top: 10px;
+	}
+	
+	
+	/* ===== Blog Page ===== */
+	
+	.blog-wrapper {
+		display: block;
+	}
+	
+	.blog-vertical {
+		width: 100%;
+		display: block;
+		overflow: hidden;
+	}
+	
+	.blog-list {
+		margin-top: 0px;
+	}
+	
+	.blog-list.blog-list-style2 {
+		margin-top: -20px;
+	}
+	
+	.related-post {
+		margin-left: -16px;
+	}
+	
+	.related-post li {
+		width: 93px;
+		margin-left: 16px;
+	}
+	
+	
+	/* ===== Our Clients Page ===== */
+	
+	.client-list li {
+		width: 33.32%;
+	}
+	
+	.bordertop,
+	.borderbottom {
+		width: 74.5%;
+	}
+	
+	.borderright {
+		height: 70%;
+	}
+	
+	.client-list li:nth-child(4) .bordertop {
+		border-top: #dddddd dashed 1px;
+	}
+	
+	.client-list li:nth-child(4) .borderright,
+	.client-list li:nth-child(8) .borderright,
+	.client-list li:nth-child(16) .borderright,
+	.client-list li:last-child .borderright {
+		border-right: #dddddd dashed 1px;
+	}
+	
+	.client-list li:nth-child(3) .borderright,
+	.client-list li:nth-child(6) .borderright,
+	.client-list li:nth-child(9) .borderright,
+	.client-list li:nth-child(12) .borderright,
+	.client-list li:nth-child(15) .borderright,
+	.client-list li:nth-child(18) .borderright {
+		border-right: none;
+	}
+	
+	.client-list li:nth-child(18) .borderbottom {
+		display: block;
+	}
+	
+	
+	/* ===== Sidebar ===== */
+	
+	.sidebar-section {
+		width: 100%;
+		padding-left: 0px;
+		margin-top: 20px;
+	}
+	
+	.recent-detail {
+		width: 100%;
+	}
+	
+	.sidebar-gallery li {
+		width: 16.65%;
+	}
+	
+	
+	/* ===== Footer ===== */
+	
+	.footer-content {
+		width: 500px;
+	}
+	
+	.footer-contact {
+		width: 100%;
+		float: none;
+		margin-right: 0px;
+	}
+	
+	.footer-subscribe {
+		width: 100%;
+		float: none;
+		margin-top: 35px;
+	}
+	
+	
+	/* ===== Subscribe Field Box ===== */
+	
+	.subscribe-box input {
+		width: 204px;
+	}
+	
+	.subscribe-box .first-name {
+		margin-right: 12px;
+	}
+	
+	
+	/* ===== Footer bottom ===== */
+
+	.footer-bottom {
+		height: auto;
+		text-align: center;
+		padding: 10px 40px;
+	}
+	
+	.copyright {
+		width: 100%;
+		float: none;
+		margin-top: 0px;
+		padding-right: 0px;
+	}
+	
+	.footer-bottom nav {
+		float: none;
+	}
+	
+	.footer-bottom ul {
+		margin-top: 5px;
+	}
+	
+	.footer-bottom ul li {
+		float: none;
+		margin: 0px 6px 0px 6px;
+	}
+}
+
+
+/*******************************************************************************
+					Design for a width of 480px to 539px
+*******************************************************************************/
+
+@media only screen and (max-width:539px)
+{
+	
+	/* ===== Body, Images and Typography ===== */
+	
+	.container {
+		width: 440px;
+	}
+	
+	
+	/* ===== All Content ===== */
+	
+	.feature-image-caption {
+		width: 100%;
+		left: 0;
+	}
+	
+	
+	/* ===== Homepage Synced Slider ===== */
+	
+	#sync2,
+	#sync2.width2 {
+		width: 455px;
+	}
+	
+	
+	/* ===== Home Content Panel ===== */
+	
+	.service-panel ul li .thumbnail-title:hover {
+		margin-bottom: 30px;
+		padding: 120px 20px 0px 20px;
+	}
+	
+	.testimonial-panel blockquote,
+	.team-panel blockquote {
+		width: 85%;
+	}
+	
+	.team-panel {
+		padding: 40px 40px 5px 40px;
+	}
+	
+	#owl-team .item {
+		margin: 0px 70px;
+	}
+	
+	#owl-client .item {
+		margin: 0px 20px;
+	}
+	
+	
+	/* ===== About Us Page ===== */
+	
+	.aboutus-team li {
+		width: 170px;
+	}
+	
+	.aboutus-team-wrapper {
+		padding: 0px 0px 0px 0px;
+	}
+	
+	
+	/* ===== Our Services Page ===== */
+	
+	.service-icon li {
+		width: 100%;
+		float: none;
+	}
+	
+	.service-icon li:nth-child(-n+8) {
+		padding: 40px 20px;
+	}
+	
+	.service-icon li:first-child {
+		padding: 0px 20px 40px 20px;
+	}
+	
+	.service-icon li:nth-child(-n+8) .service-bordertop {
+		display: block;
+	}
+	
+	.service-icon li:nth-child(-n+8) .service-borderright {
+		display: none;
+	}
+	
+	.service-icon li:first-child .service-bordertop {
+		display: none;
+	}
+	
+	
+	/* ===== Blog Page ===== */
+	
+	.related-post {
+		margin-left: -20px;
+	}
+	
+	.related-post li {
+		width: 170px;
+		margin-left: 20px;
+	}
+	
+	
+	/* ===== Our Clients Page ===== */
+	
+	.client-list li {
+		width: 50%;
+	}
+	
+	.bordertop,
+	.borderbottom {
+		width: 80%;
+	}
+	
+	.borderright {
+		height: 76%;
+	}
+	
+	.client-list li:nth-child(-n+20) .bordertop {
+		display: block;
+		border-top: #dddddd dashed 1px;
+	}
+	
+	.client-list li:nth-child(-n+2) .bordertop {
+		display: none;
+	}
+	
+	.client-list li:nth-child(-n+20) .borderright {
+		display: block;
+		border-right: #dddddd dashed 1px;
+	}
+	
+	.client-list li:nth-child(even) .borderright {
+		display: none;
+	}
+	
+	
+	/* ===== Footer ===== */
+	
+	.footer-content {
+		width: 440px;
+	}
+	
+	
+	/* ===== Subscribe Field Box ===== */
+	
+	.subscribe-box input {
+		width: 174px;
+	}
+}
+
+
+/*******************************************************************************
+					Design for a width of 320px to 479px
+*******************************************************************************/
+
+@media only screen and (max-width:479px)
+{
+	
+	/* ===== Header Menu ===== */
+	
+	.header-section {
+		min-width: 320px;
+	}
+	
+	
+	/* ===== Body, Images and Typography ===== */
+	
+	.container {
+		width: 310px;
+	}
+	
+	.stripe {
+		padding: 40px 30px;
+	}
+	
+	
+	/* ===== Homepage Synced Slider ===== */
+	
+	#sync1 .item .caption {
+		padding: 14px 20px 14px 30px;
+	}
+	
+	#sync2,
+	#sync2.width2 {
+		width: 326px;
+	}
+	
+	
+	/* ===== All Content ===== */
+	
+	.site-slogan-wrapper {
+		padding: 30px;
+	}
+	
+	.home-aboutus-title {
+		padding: 10px 30px;
+	}
+	
+	.home-aboutus-details {
+		padding: 25px 30px 85px 30px;
+	}
+	
+	.homepanel-title-area {
+		width: 100%;
+	}
+	
+	.homepanel-title {
+		padding: 0px 20px;
+	}
+	
+	.page-title {
+		padding: 25px 30px;
+	}
+	
+	.page-title.single-page {
+		padding: 25px 30px 30px 30px;
+	}
+	
+	.feature-image-caption {
+		font-size: 14px;
+		padding: 10px 30px;
+	}
+	
+	
+	/* ===== Home Content Panel ===== */
+	
+	.service-panel {
+		padding: 40px 30px 5px 30px;
+	}
+	
+	.portfolio-panel {
+		padding-bottom: 20px;
+	}
+	
+	.testimonial-panel {
+		padding-bottom: 5px;
+	}
+	
+	.service-panel ul li .thumbnail-title:hover {
+		margin-bottom: 35px;
+		padding: 165px 20px 0px 20px;
+	}
+	
+	.testimonial-panel blockquote,
+	.team-panel blockquote {
+		width: 90%;
+	}
+	
+	.team-panel {
+		padding: 40px 30px 5px 30px;
+	}
+	
+	#owl-team .item {
+		margin: 0px 15px;
+	}
+	
+	#owl-client .item {
+		margin: 0px 15px;
+	}
+	
+	.client-panel {
+		padding: 40px 30px 5px 30px;
+	}
+	
+	
+	/* ===== Call To Action ===== */
+	
+	.call-action {
+		padding: 40px 30px;
+	}
+	
+	
+	/* ===== About Us Page ===== */
+	
+	.aboutus-team {
+		margin-left: -16px;
+	}
+	
+	.aboutus-team li {
+		width: 117px;
+		margin-top: 16px;
+		margin-left: 16px;
+	}
+	
+	.aboutus-page-fullbox {
+		padding-bottom: 5px;
+	}
+	
+	.aboutus-page-fullbox blockquote {
+		width: 85%;
+		text-align: left;
+	}
+	
+	
+	/* ===== Our Services Page ===== */
+	
+	.service-icon li:last-child {
+		padding-bottom: 0px;
+	}
+	
+	.service-detail button {
+		width: 190px;
+		left: 0;
+		bottom: 0;
+		margin-left: 30px;
+	}
+	
+	.service-list li:nth-child(even) .service-detail button {
+		left: 0;
+		right: inherit;
+		margin-left: 30px;
+	}
+	
+	
+	/* ===== Portfolio Page ===== */
+	
+	.portfolio-page,
+	.portfolio-single {
+		padding: 40px 30px 20px 30px;
+	}
+	
+	.portfolio-single blockquote {
+		width: 85%;
+		text-align: left;
+	}
+	
+	#social-share {
+		float: left;
+	}
+	
+	
+	/* ===== Blog Page ===== */
+	
+	.blog-header h2 {
+		width: 80%;
+	}
+	
+	.blog-list-detail {
+		padding: 30px;
+	}
+	
+	.blog-list-detail p {
+		margin-top: 10px;
+	}
+	
+	.blog-list-bottom,
+	.blog-meta {
+		display: block;
+	}
+	
+	.blog-list-bottom button {
+		width: 100%;
+		float: none;
+		margin-top: 25px;
+	}
+	
+	.author-detail {
+		display: block;
+		overflow: hidden;
+	}
+	
+	.author-image {
+		width: 80px;
+		display: block;
+		float: left;
+		margin-right: 20px;
+		margin-bottom: 5px;
+	}
+	
+	.author-image img {
+		width: 100%;
+		height: auto;
+	}
+	
+	.author-text {
+		display: block;
+		padding-left: 0px;
+	}
+	
+	.related-post li {
+		width: 115px;
+	}
+	
+	.blog-comment li {
+		padding: 15px;
+	}
+	
+	.comment-detail {
+		padding-left: 15px;
+	}
+	
+	.comment-avatar {
+		width: 65px;
+	}
+	
+	.comment-avatar img {
+		width: 100%;
+		height: auto;
+	}
+	
+	.name-date {
+		float: none;
+	}
+	
+	.reply {
+		float: none;
+		margin-top: 5px;
+	}
+	
+	.comment-text {
+		margin-top: 5px;
+	}
+	
+	.page-without-sidebar blockquote {
+		width: 85%;
+		text-align: left;
+	}
+	
+	
+	/* ===== Our Clients Page ===== */
+	
+	.client-list li {
+		width: 100%;
+	}
+	
+	.client-list li img {
+		width: 75%;
+	}
+	
+	.client-list li:first-child {
+		padding-top: 0px;
+	}
+	
+	.client-list li:last-child {
+		padding-bottom: 0px;
+	}
+	
+	.bordertop,
+	.borderbottom {
+		width: 100%;
+		margin-left: 0px;
+	}
+	
+	.client-list li:nth-child(-n+20) .bordertop {
+		display: block;
+		border-top: #dddddd dashed 1px;
+	}
+	
+	.client-list li:first-child .bordertop {
+		display: none;
+	}
+	
+	.client-list li:nth-child(-n+20) .borderright {
+		display: none;
+	}
+	
+	
+	/* ===== Contact Us Page ===== */
+	
+	.map-container {
+		height: 250px;
+	}
+	
+	.contact-textarea figure {
+		float: none;
+		margin: 0px 0px 20px 0px;
+	}
+	
+	.contact-textarea img {
+		width: 100%;
+		height: auto;
+	}
+	
+	.contact-social {
+		float: left;
+	}
+	
+	.contact-social li:first-child {
+		font-size: 14px;
+		padding: 10px 14px;
+	}
+	
+	
+	/* ===== Sidebar ===== */
+	
+	.sidebar-gallery li {
+		width: 25%;
+	}
+	
+	
+	/* ===== Footer ===== */
+	
+	.footer-content {
+		width: 310px;
+	}
+	
+	.footer-top {
+		padding: 40px 30px;
+	}
+	
+	
+	/* ===== Subscribe Field Box ===== */
+	
+	.subscribe-box input {
+		width: 100%;
+	}
+	
+	.subscribe-box .first-name {
+		float: none;
+		margin-right: 0px;
+	}
+	
+	.subscribe-box .last-name {
+		margin-top: 12px;
+	}
+	
+	
+	/* ===== Footer bottom ===== */
+
+	.footer-bottom {
+		padding: 10px 30px;
+	}
+}

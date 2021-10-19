@@ -1,0 +1,42 @@
+﻿@model IEnumerable<blog.Models.Haber>
+
+<div class="sidebar-container first-widget">
+    <div class="sidebar-title">
+        <h2>Eski Yazılar</h2>
+    </div>
+    <div class="sidebar-detail">
+        <ul class="recent-content">
+
+            @foreach (var item in Model)
+            {
+                <li>
+                    <div class="recent-image">
+                        <figure>
+                            <a href="/Detay/Index/@item.id">
+                                <div class="sidebar-thumbnail-hover"></div>
+                                <img src="@item.HaberResimK" alt="recent news" />
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="recent-detail">
+                        <h3><a href="/Detay/Index/@item.id">@item.HaberBaslik</a></h3>
+                        <p>@item.HaberIcerik</p>
+                    </div>
+                </li>
+            }
+            <!--Recent 1-->
+            
+            <!--End-->
+            <!--Recent 2-->
+            
+            <!--End-->
+            <!--Recent 3-->
+            
+            <!--End-->
+            <!--Recent 4-->
+            
+            <!--End-->
+
+        </ul>
+    </div>
+</div>

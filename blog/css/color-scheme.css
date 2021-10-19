@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**
+	Gemiz HTML Template
+ 	Copyright (c) 2014, Pophonic 
+
+	Author: Pophonic
+	Profile: themeforest.net/user/pophonic
+	
+**/
+
+
+
+/*******************************************************************************
+			You can change color scheme by edit main color below
+*******************************************************************************/
+
+
+.flexy-menu li:hover > a,
+.flexy-menu li.active a,
+.dark .flexy-menu li:hover > a,
+.dark .flexy-menu li.active a {
+	background: #f68a5e;
+}
+
+.flexy-menu ul li a:hover,
+.flexy-menu li li:hover > a {
+	background: #f68a5e !important;
+}
+
+.logo,
+button,
+.team-social li:hover,
+.portfolio-status ul li:hover,
+#shareme .share-this,
+#shareme a:hover,
+.page-count ul li:hover,
+.page-count .page-active,
+.contact-social li:first-child,
+.contact-social li:hover,
+.popular-tags li:hover,
+.dark #shareme a:hover,
+.dark .team-social li:hover,
+.dark .page-count .page-active,
+.dark .page-count .page-active:hover,
+.dark .contact-social li:hover,
+.dark .contact-social li:first-child,
+.dark .popular-tags li:hover,
+.subscribe-box .subscribe-button,
+.comment-active .submit-button,
+.dark .comment-active .submit-button,
+.filter:hover, .filter.selected {
+	background-color: #f68a5e;
+}
+
+button:hover,
+.subscribe-box .subscribe-button:hover,
+.comment-active .submit-button:hover,
+.dark .comment-active .submit-button:hover {
+	background-color: #e38057;
+}
+
+.dark .filter:hover, .filter.selected {
+	background-color: #f68a5e !important;
+}
+
+.blog-header h2 a:hover,
+.related-post li h4 a:hover,
+.sidebar-list ul li a:hover,
+.recent-detail h3 a:hover,
+.dark .blog-header h2 a:hover {
+	color: #f68a5e;
+}
+
+#sync1 .item .caption.color2,
+.feature-image-caption,
+.mega-hover {
+	background-color: rgba(246, 138, 94, 0.8);
+}
+
+.thumbnail-hover {
+	background: url(../images/link-icon.png) no-repeat top center rgba(246, 138, 94, 0.8);
+}
+
+.thumbnail-hover:hover {
+	background: url(../images/link-icon.png) no-repeat center center rgba(246, 138, 94, 0.8);
+}
+
+.service-panel .thumbnail-hover {
+	background: rgba(246, 138, 94, 0.8);
+}
+
+.flexy-menu ul, 
+.flexy-menu ul li ul {
+	background: rgba(246, 138, 94, 0.85);
+}
+
+.flexy-menu ul li a:hover,
+.flexy-menu li.active li:hover > a,
+.flexy-menu li li:hover > a {
+	background: #ffad80 !important;
+}

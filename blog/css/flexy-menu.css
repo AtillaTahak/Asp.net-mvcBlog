@@ -1,0 +1,576 @@
+
+/*******************************************************************************
+							Header and Logo
+*******************************************************************************/
+.header-section {
+	width: 200px;
+	float: left;
+	z-index: 8000;
+}
+
+.logo {
+	width: 100%;
+	text-align: center;
+	background-color: #f68a5e;
+	padding: 50px 0px;
+	display: table;
+}
+
+.logo-wrapper {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+
+
+/*******************************************************************************
+							Default configuration
+*******************************************************************************/
+.flexy-menu {
+	width: 100%;
+	margin: 10px 0px 0px 0px;
+	padding: 0;
+	position:relative;
+	float:left;
+	font-family: 'Roboto', sans-serif;
+	list-style: none;
+}
+.flexy-menu li {
+	display:inline-block;
+	font-size:14px;
+	font-weight:700;
+	text-align:right;
+	margin-bottom:10px;
+	padding:0;
+	float:left;
+	line-height: 20px;
+	position:relative;
+}
+.flexy-menu > li > a {
+	width:auto !important;
+	padding:10px 30px !important;
+	color:#9a9a9a;
+	text-decoration:none;
+	display:block;
+	text-transform:uppercase;
+	background-color:#FFFFFF;
+	border-radius:5px;
+	-webkit-transition:color 0.2s linear, background 0.2s linear;	
+	-moz-transition:color 0.2s linear, background 0.2s linear;	
+	-o-transition:color 0.2s linear, background 0.2s linear;	
+	transition:color 0.2s linear, background 0.2s linear;	
+}
+.flexy-menu li:hover > a,
+.flexy-menu li.active a {
+	background: #f68a5e;
+	color: #fff;
+}
+.menu-space {
+	width: 10px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-right: -10px;
+}
+
+/*----------------------------
+	Right alignment (item)
+----------------------------*/
+.flexy-menu li.right{
+	float: right; 
+}
+
+/*-----------------------------
+	Drop down configuration
+-----------------------------*/
+.flexy-menu ul, 
+.flexy-menu ul li ul {
+	width: 180px !important;
+	list-style: none;
+    margin: 0px 0px 0px 10px;
+    padding: 0;
+	display: none;
+    position: absolute;
+    z-index: 99999;
+	background: rgba(246,138,94,0.85);
+	border-radius: 5px;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+.flexy-menu ul {
+    top: 60px;
+    left: 0;
+}
+.flexy-menu ul li ul {
+    top: 0;
+    left: 100%;
+	margin: 0;
+}
+.flexy-menu ul li {
+	clear:both;
+	width:100%;
+	border: none;
+	font-size:12px;
+	font-weight:700;
+	text-align:left;
+	margin-bottom: 0px;
+}
+.flexy-menu ul li a {
+	padding:10px 25px 10px 20px !important;
+	width:100%;
+	color:#ffffff;
+	font-size:13px;
+	text-decoration:none;
+	display:inline-block;
+	float:left;
+	clear:both;
+	background-color: transparent !important;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; 
+	-webkit-box-sizing:border-box;
+	
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;	
+}
+.flexy-menu ul li a:hover {
+	color: #ffffff !important;
+	background: #ffad80 !important;
+}
+.flexy-menu ul li:first-child a:hover {
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.flexy-menu ul li:last-child a:hover {
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.flexy-menu ul ul li a:hover {
+	border-radius: 0px !important;
+}
+.flexy-menu ul ul li:first-child a:hover {
+	-webkit-border-top-left-radius: 5px !important;
+	-webkit-border-top-right-radius: 5px !important;
+	-moz-border-radius-topleft: 5px !important;
+	-moz-border-radius-topright: 5px !important;
+	border-top-left-radius: 5px !important;
+	border-top-right-radius: 5px !important;
+}
+.flexy-menu ul ul li:last-child a:hover {
+	-webkit-border-bottom-right-radius: 5px !important;
+	-webkit-border-bottom-left-radius: 5px !important;
+	-moz-border-radius-bottomright: 5px !important;
+	-moz-border-radius-bottomleft: 5px !important;
+	border-bottom-right-radius: 5px !important;
+	border-bottom-left-radius: 5px !important;
+}
+.flexy-menu li.active li a {
+	background-color: transparent;
+}
+.flexy-menu li.active li:hover > a,
+.flexy-menu li li:hover > a {
+	background: #ffad80 !important;
+}
+.flexy-menu li li:first-child:hover > a {
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.flexy-menu li li:last-child:hover > a {
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+/*-----------------------------
+	Drop down indicators
+-----------------------------*/
+.flexy-menu > li .indicator{
+	position: absolute;
+	color: #dedede;
+	top: 10px !important;
+	right: 11px !important;
+	font-size: 17px;
+	
+	-webkit-transition:color 0.2s linear;	
+	-moz-transition:color 0.2s linear;	
+	-o-transition:color 0.2s linear;	
+	transition:color 0.2s linear;	
+}
+.flexy-menu ul > li .indicator{
+	top: 10px;
+	right: 8px;
+	color: #ffffff;
+}
+
+.flexy-menu li:hover > .indicator,
+.flexy-menu li.active .indicator {
+	color: #ffffff;
+}
+
+/*------------------
+	Preset sizes
+------------------*/
+.thin > li > a{
+	padding: 10px 22px;
+}
+.thin ul{
+	top: 40px;
+}
+.thin > li .indicator{
+	top: 10px;
+}
+
+.thick > li > a{
+	padding: 40px 22px;
+}
+.thick ul{
+	top: 100px;
+}
+.thick > li .indicator{
+	top: 40px;
+}
+
+/*-------------------------
+	Icons configuration
+-------------------------*/
+.flexy-menu i{
+	line-height: 20px !important;
+	margin-right: 6px;
+	font-size: 18px;
+	float: left;
+}
+
+/*------------------------------------
+	Collapsible menu configuration
+------------------------------------*/
+.flexy-menu > li.showhide{
+	display: none;
+	width: 100%;
+	height: 50px;
+	cursor: pointer;
+	color:#dedede;
+	border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+	background: #ffffff;
+}
+.flexy-menu > li.showhide span.title{
+	margin: 16px 0 0 25px;
+	float: left;
+	display: none;
+}
+.flexy-menu > li.showhide span.icon{
+	margin: 17px 20px;
+	float: right;
+}
+.flexy-menu > li.showhide .icon em{
+	margin-bottom: 3px;
+	display: block;
+	width: 20px;
+	height: 2px;
+	background: #ccc;
+}
+
+/*-----------------
+	Light Theme
+-----------------*/
+.light{ background: #fff; border: solid 1px #dfdfdf; }
+.light a{ color: #555 !important; }
+.light li:hover > a, .light li.active a { background: #555; color: #fff !important; }
+.light ul, .light ul li ul { background: #fff; }
+.light > li.showhide{ background: #fff; color: #555 !important;}
+.light > li.showhide .icon em{ background: #555; }
+.light li .indicator{ color: #555; }
+.light li:hover > .indicator{ color: #fff; }
+
+/*------------
+	Colors
+------------*/
+.blue li:hover > a, .blue li.active a { background: #02B8FA; color: #fff!important; }
+
+.green li:hover > a, .green li.active a { background: #88C425; color: #fff!important;}
+
+.red li:hover > a, .red li.active a { background: #cf0404; color: #fff!important; }
+
+.orange li:hover > a, .orange li.active a { background: #ff670f; color: #fff!important; }
+
+.yellow li:hover > a, .yellow li.active a { background: #febf01; color: #444!important; }
+.yellow li .indicator{ color: #dedede; }
+.yellow li:hover > .indicator{ color: #444; }
+.yellow.light li .indicator{ color: #555; }
+
+.purple li:hover > a, .purple li.active a { background: #A737FA; color: #fff!important; }
+
+.pink li:hover > a, .pink li.active a { background: #f82b4c; color: #fff!important; }
+
+
+/*******************************************************************************
+							Vertical configuration
+*******************************************************************************/
+.flexy-menu.vertical{
+	width: 200px;
+}
+.flexy-menu.vertical li{
+	width: 100%;
+}
+.flexy-menu.vertical li a{
+	display: inline-block !important;
+	width: 100%;
+	padding:18px 20px 16px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; 
+	-webkit-box-sizing:border-box;
+}
+.flexy-menu.vertical ul li{
+	width: 100%;
+}
+
+/*--------------------------------
+	Drop down on vertical menu
+--------------------------------*/
+.flexy-menu.vertical ul, 
+.flexy-menu.vertical ul li ul {
+	width: 150px;
+}
+.flexy-menu.vertical ul {
+    top: 0;
+	left: 100%;
+}
+.flexy-menu.vertical ul li ul {
+    top: 0px;
+}
+
+/*---------------------------------
+	Vertical menu on right side 
+---------------------------------*/
+.flexy-menu.vertical.right{
+	float: right !important;
+}
+.flexy-menu.vertical.right ul{
+	left: -150px !important;
+}
+
+/*------------------------------
+	Indicator on vertical menu 
+------------------------------*/
+.flexy-menu.vertical > li .indicator{
+	top: 17px;
+	right: 15px;
+	font-size: 17px;
+}
+.flexy-menu.vertical ul > li .indicator{
+	top: 18px;
+	right: 15px;
+}
+
+
+/*****************************************************************************
+							DARK VERSION STYLE
+*****************************************************************************/
+.dark .flexy-menu > li > a {
+	color:#cccccc;
+	background-color:#5a5a5a;	
+}
+.dark .flexy-menu li:hover > a,
+.dark .flexy-menu li.active a {
+	background: #f68a5e;
+	color: #fff;
+}
+
+/*------------------------------------
+	Collapsible menu configuration
+------------------------------------*/
+.dark .flexy-menu > li.showhide{
+	border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+	background: #5a5a5a;
+}
+
+
+/*****************************************************************************
+							Responsive design
+*****************************************************************************/
+@media only screen and (max-width: 1024px) {
+	.header-section {
+		position: absolute;
+		width: 100%;
+		float: none;
+		background-color: #ffffff;
+	}
+	.logo {
+		width: 160px;
+		height: 50px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 0px;
+		z-index: 99999;
+	}
+	.logo img {
+		width: auto;
+		height: 30px;
+	}
+	.menu-space {
+		display: none;
+	}
+	.flexy-menu {
+		margin: 0;
+	}
+	.flexy-menu.vertical{
+		width: 100%;
+	}
+	.flexy-menu li{
+		display: block;
+		width: 100%;
+		text-align: left;
+		margin-bottom: 0px;	
+	}
+	.flexy-menu li:last-child {
+		box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+	}
+	.flexy-menu > li > a{
+		width: 100% !important;
+		padding-top:15px;
+		padding-bottom:15px;
+		padding-left: 25px;
+		border-radius: 0px;
+	}
+	.flexy-menu a{
+		width: 100%;
+		box-sizing:border-box;
+		-moz-box-sizing:border-box; 
+		-webkit-box-sizing:border-box; 
+	}
+	.flexy-menu ul, 
+	.flexy-menu ul li ul,
+	.flexy-menu.vertical ul, 
+	.flexy-menu.vertical ul li ul{
+		width: 100% !important;
+		left: 0;
+		margin: 0;
+		border-left: none;
+		position: static;
+		background: #ffffff;
+		border-radius: 0px;
+		box-sizing:border-box;
+		-moz-box-sizing:border-box; 
+		-webkit-box-sizing:border-box;
+	}
+	.flexy-menu ul li {
+		border-left: none;
+		border-right: none;
+	}
+	.flexy-menu ul li a,
+	.flexy-menu.vertical ul li a	{
+		padding-top:10px;
+		padding-bottom:10px;
+		color: #9a9a9a;
+	}
+	.flexy-menu ul > li > a{
+		padding-left: 40px !important;
+	}
+	.flexy-menu > li .indicator{
+		top: 15px;
+		right: 25px !important;
+		font-size: 17px;
+	}
+	.flexy-menu ul > li .indicator{
+		right: 24px;
+		color: #dedede;
+	}
+	.flexy-menu.vertical ul > li .indicator{
+		top: 10px;
+		right: 15px;
+		color: #dedede;
+	}
+	.flexy-menu ul > li:hover .indicator{
+		color: #ffffff;
+	}
+	.flexy-menu.vertical ul > li:hover .indicator{
+		color: #ffffff;
+	}
+	.flexy-menu > li > ul > li > a{ padding-left: 40px !important; }
+	.flexy-menu > li > ul > li > ul > li > a{ padding-left: 60px !important; }
+	.flexy-menu > li > ul > li > ul > li > ul > li > a{ padding-left: 80px !important; }
+	
+	.flexy-menu ul li a:hover {
+		background: #f68a5e !important;
+	}
+	.flexy-menu ul li:first-child a:hover,
+	.flexy-menu ul ul li:first-child a:hover {
+		-webkit-border-top-left-radius: 0px !important;
+		-webkit-border-top-right-radius: 0px !important;
+		-moz-border-radius-topleft: 0px !important;
+		-moz-border-radius-topright: 0px !important;
+		border-top-left-radius: 0px !important;
+		border-top-right-radius: 0px !important;
+	}
+	.flexy-menu ul li:last-child a:hover,
+	.flexy-menu ul ul li:last-child a:hover {
+		-webkit-border-bottom-right-radius: 0px !important;
+		-webkit-border-bottom-left-radius: 0px !important;
+		-moz-border-radius-bottomright: 0px !important;
+		-moz-border-radius-bottomleft: 0px !important;
+		border-bottom-right-radius: 0px !important;
+		border-bottom-left-radius: 0px !important;
+	}
+	.flexy-menu li.active li:hover > a,
+	.flexy-menu li li:hover > a {
+		background: #f68a5e !important;
+		color: #ffffff;
+	}
+	.flexy-menu li li:first-child:hover > a {
+		-webkit-border-top-left-radius: 0px;
+		-webkit-border-top-right-radius: 0px;
+		-moz-border-radius-topleft: 0px;
+		-moz-border-radius-topright: 0px;
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+	}
+	.flexy-menu li li:last-child:hover > a {
+		-webkit-border-bottom-right-radius: 0px;
+		-webkit-border-bottom-left-radius: 0px;
+		-moz-border-radius-bottomright: 0px;
+		-moz-border-radius-bottomleft: 0px;
+		border-bottom-right-radius: 0px;
+		border-bottom-left-radius: 0px;
+	}
+	
+	/*------------------------------------
+		     DARK VERSION STYLE
+	------------------------------------*/
+	.dark .header-section,
+	.dark .flexy-menu ul, 
+	.dark .flexy-menu ul li ul,
+	.dark .flexy-menu.vertical ul, 
+	.dark .flexy-menu.vertical ul li ul {
+		background-color: #5a5a5a;
+	}
+	.dark .flexy-menu ul li a,
+	.dark .flexy-menu.vertical ul li a {
+		color: #cccccc;
+	}
+	.dark .flexy-menu li.active li:hover > a,
+	.dark .flexy-menu li li:hover > a {
+		color: #ffffff;
+	}
+}

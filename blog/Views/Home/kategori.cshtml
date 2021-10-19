@@ -1,0 +1,18 @@
+﻿@model IEnumerable<blog.Models.Haber>
+<div class="sidebar-container">
+    <div class="sidebar-title">
+        <h2>Archive</h2>
+    </div>
+    <div class="sidebar-detail sidebar-list">
+        <ul>
+            @foreach (var item in Model)
+            {
+                <li>
+                    <i class="fa fa-angle-right"></i>
+                    <a href="/Detay/Zaman/@item.id">@item.Tarih</a>
+                </li>
+            }         
+            
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,100 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model blog.Models.Haber
+
+<div class="blog-vertical">
+    <div class="stripe">
+
+        <!--Blog Meta-->
+        <nav class="blog-meta blog-single">
+            <span><i class="fa fa-clock-o"></i><a href="#">@Model.Tarih</a></span>
+            <span><i class="fa fa-list-ul"></i><a href="#">@Model.id</a></span>
+        </nav>
+        <!--End-->
+
+        <p class="text-content">
+        <p>@Model.Haber1</p>
+
+        <!--Social Share Button-->
+        <div id="social-share">
+            <div id="shareme" data-url="" data-text="Gemiz Responsive HTML Template"></div>
+        </div>
+        <!--End-->
+
+        <div class="clearfix"></div>
+
+        <!--About Author Start-->
+        
+        
+        <!--About Author End-->
+        <!--Related Post Start-->
+       
+        <!--Related Post End-->
+
+        <div class="clearfix"></div>
+
+        @{
+            blog.Models.blogContext db = new blog.Models.blogContext();
+            var yorrum = db.Yorumlars.Where(x=>x.YorumId == Model.id);
+            var bakak = db.Yorumlars.Where(x => x.YorumOnay == 1).ToList();
+            
+        <div class="section-title-area">
+        <h2><span class="section-title">Yorumlar<span class="blog-comment-count">@yorrum.Count()</span></span></h2>
+        </div>
+        <ul class="blog-comment">
+            @try
+            {
+                if (bakak != null)
+                {
+                    foreach (var item in yorrum)
+                    {
+                        <li>
+
+                            <div class="comment-detail">
+                                <div class="comment-header">
+                                    <div class="name-date">
+                                        @item.YorumAd
+                                    </div>
+
+                                </div>
+                                <div class="comment-text">
+                                    <p>@item.Yorum</p>
+                                </div>
+                            </div>
+                        </li>
+                    }
+                }
+
+            }
+            catch 
+            {
+
+            }
+           
+        </ul>
+        <!--Comments End-->
+        <!--Leave a Comment Start-->
+        <div class="section-title-area">
+
+            <h2><span class="section-title">Yorum Yap</span></h2>
+        </div>
+        <div class="comment-fieldbox">
+            <form method="post" action="/Detay/Yorum/@Model.id">
+                <input class="input-name" type="text" name="name" placeholder="İsminiz *" required />
+                <input class="input-email" type="text" name="email" placeholder="Mail Adresiniz *" required />
+                <textarea class="input-textarea" name="comment" placeholder="Yorumunuz *" required></textarea>
+                <div class="comment-active">
+                    <span>BLOG Adresi</span>
+                    <input class="submit-button" type="submit" value="Yorum Yap" />
+                </div>
+            </form>
+        </div>
+        }
+        <!--Comments Start-->
+
+        <!--Leave a Comment End-->
+
+    </div>
+</div>

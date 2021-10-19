@@ -1,0 +1,84 @@
+﻿@model blog.Models.Haber
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/admin.cshtml";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Haber</legend>
+
+        @Html.HiddenFor(model => model.id)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.HaberBaslik)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.HaberBaslik)
+            @Html.ValidationMessageFor(model => model.HaberBaslik)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.HaberIcerik)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.HaberIcerik)
+            @Html.ValidationMessageFor(model => model.HaberIcerik)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Haber1)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Haber1)
+            @Html.ValidationMessageFor(model => model.Haber1)
+        </div>
+
+        <div class="editor-label">
+            Haber Resmi
+        </div>
+        <div class="editor-field">
+            <input type="file" name="resim" value=" " />
+
+        </div>
+        <div class="editor-label">
+            Resim Kucuk
+        </div>
+        <div class="editor-field">
+            <input type="file" name="resimk" value=" " />
+
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Kategori)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Kategori)
+            @Html.ValidationMessageFor(model => model.Kategori)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Tarih)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Tarih)
+            @Html.ValidationMessageFor(model => model.Tarih)
+        </div>
+
+  
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

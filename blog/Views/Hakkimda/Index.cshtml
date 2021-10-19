@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Title = "Hakkimda";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model blog.Models.Hakkimda
+
+<div class="content-wrapper">
+
+    <!--Feature Image-->
+    <div class="feature-image">
+        <div class="feature-image-caption">
+            <p>Blog Yazısı</p>
+        </div>
+        <figure>
+            <img src="@Model.HakkimdaResim" alt="feature image" />
+        </figure>
+    </div>
+    <!--End-->
+    <!--Page Title-->
+    <div class="page-title sub">
+        <div class="page-title-detail">
+            <h1>Hakkimizda</h1>
+            <p class="sub-title">Hakkımızda Yazı</p>
+        </div>
+        <nav class="page-navigation">
+            <ul>
+                <li><a href="/">Anasayfa</a></li>
+                <li>Hakkımda</li>
+            </ul>
+        </nav>
+    </div>
+    <!--End-->
+    <!--Body Content Start-->
+    <section class="stripe aboutus-page-fullbox">
+        <blockquote>
+            <span class="quote-icon">Site Sloganı</span>
+        </blockquote>
+        <p class="text-content">@Model.HakkimdaYazi</p><br>
+
+
+        <!--Our Team Title-->
+        <div class="homepanel-title-area">
+            <h1><span class="homepanel-title">Takımımız</span></h1>
+        </div>
+
+        @{Html.RenderAction("Takim");}
+        <!--Our Team Start-->
+        
+        <!--Our Team End-->
+
+    </section>
+    <!--Body Content End-->
+
+</div>

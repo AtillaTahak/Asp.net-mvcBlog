@@ -1,0 +1,56 @@
+﻿@model IEnumerable<blog.Models.Hakkimda>
+
+<div class="aboutus-team-wrapper">
+    <div id="owl-team" class="owl-carousel owl-theme">
+
+        <!--Team 1 Start-->
+        @foreach (var item in Model)
+        {
+            <div class="item">
+                <figure>
+                    <a href="#">
+                        <div class="thumbnail-hover"></div>
+                        <img src="@item.HakkimdaFoto" alt="team" />
+                    </a>
+                </figure>
+                <h2>@item.HakkimdaAd @item.HakkimdaSoyAd</h2>
+                <p>Kişi Hakkında Yazı.</p>
+
+                <!--Social Media-->
+                <ul class="team-social">
+                    <li>
+                        <a href="#">
+                            <img src="/images/social-media/top-social-media1.png" alt="facebook" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="/images/social-media/top-social-media2.png" alt="facebook" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="/images/social-media/top-social-media3.png" alt="facebook" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="/images/social-media/top-social-media6.png" alt="facebook" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        }
+
+        <!--Team 1 End -->
+        <!--Team 2 Start-->
+        <!--Team 2 End -->
+        <!--Team 3 Start-->
+        <!--Team 3 End -->
+        <!--Team 4 Start-->
+        <!--Team 4 End -->
+        <!--Team 5 Start-->
+        <!--Team 5 End -->
+
+    </div>
+</div>

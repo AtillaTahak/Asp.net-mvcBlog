@@ -1,0 +1,76 @@
+﻿@model blog.Models.Haber
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/admin.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Haber</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.HaberBaslik)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.HaberBaslik)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.HaberIcerik)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.HaberIcerik)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Haber1)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Haber1)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.HaberResim)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.HaberResim)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Kategori)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Kategori)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Tarih)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Tarih)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.YorumId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.YorumId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.HaberResimK)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.HaberResimK)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

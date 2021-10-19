@@ -1,0 +1,88 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model IEnumerable<blog.Models.Haber>
+<section class="blog-wrapper">
+
+    <div class="blog-vertical">
+        <ul class="blog-list blog-list-style2">
+
+            <!--Blog List 1-->
+            @foreach (var item in Model)
+            {
+                <li>
+                    <figure>
+                        <a href="/Detay/Index/@item.id">
+                            <div class="thumbnail-hover"></div>
+                            <img src="@item.HaberResim" alt="blog list" />
+                        </a>
+                    </figure>
+                    <div class="blog-list-detail">
+                        <div class="blog-header">
+                            <h2><a href="/Detay/Index/@item.id">@item.HaberBaslik</a></h2>
+                            <a href="#">
+                                <div class="comment-status">
+                                    <div class="comment-count">5</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="clearfix"></div>
+                        <p>@item.HaberIcerik</p>
+                        <div class="blog-list-bottom">
+                            <nav class="blog-meta">
+                                <span><i class="fa fa-clock-o"></i><a href="#">@item.Tarih</a></span>
+                                <span><i class="fa fa-list-ul"></i><a href="/Kategori/@item.id">@item.Kategori</a></span>
+                            </nav>
+                            <button class="dark-button" onclick="location.href='/Detay/Index/@item.id'">oku</button>
+                        </div>
+                    </div>
+                </li>
+            }
+
+            <!--End-->
+            <!--Blog List 2-->
+            <!--End-->
+            <!--Blog List 3-->
+            <!--End-->
+            <!--Blog List 4-->
+            <!--End-->
+
+        </ul>
+
+        <!--Next page Start-->
+        <nav class="page-count">
+            <ul>
+                <li class="page-active" onclick="location.href='#'">1</li>
+                <li onclick="location.href='#'">2</li>
+                <li onclick="location.href='#'">3</li>
+                <li onclick="location.href='#'">4</li>
+                <li onclick="location.href='#'">5</li>
+                <li onclick="location.href='#'"><i class="fa fa-angle-right"></i></li>
+            </ul>
+        </nav>
+        <!--Next page End-->
+
+    </div>
+    <aside class="sidebar-section">
+
+        <!--Recent Blog-->
+        @{Html.RenderAction("gecmis");}
+        
+        <!--Recent Blog End-->
+        <!--Sidebar Categories-->
+        @{Html.RenderAction("kategori");}
+
+
+        
+        <!--Sidebar Categories End-->
+        <!--Sidebar Gallery-->
+        <!--Sidebar Gallery End-->
+        <!--Sidebar Archive-->
+        
+        <!--Sidebar Archive End-->
+        <!--Popular Tags-->
+        <!--Popular Tags End-->
+
+    </aside>
+</section>
